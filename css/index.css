@@ -224,6 +224,31 @@ header {
 	text-decoration: underline;
 }
 
+/* Footer */
+footer {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+	align-items: center;
+
+	a[href]:has(.icon) {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.icon {
+		width: 2em;
+		height: 2em;
+	}
+}
+
+@media screen and (width >= 40rem) {
+	footer {
+		flex-direction: row;
+	}
+}
+
 /* Posts list */
 .postlist {
 	counter-reset: start-from var(--postlist-index);
