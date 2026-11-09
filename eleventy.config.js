@@ -76,13 +76,11 @@ export default async function(eleventyConfig) {
 			limit: 10,
 		},
 		metadata: {
-			language: "en",
-			title: "Louis Tsui",
-			subtitle: "Personal website with blog and portfolio",
-			base: "https://louistsui.ca/",
-			author: {
-				name: "Louis Tsui"
-			}
+			language: metadata.language,
+			title: metadata.title,
+			subtitle: metadata.description,
+			base: metadata.url,
+			author: metadata.author,
 		}
 	});
 
